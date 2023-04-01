@@ -1,0 +1,29 @@
+Out of bounds leading whitespace
+
+<script>
+console.log('Hello World One!');
+</script>
+
+Out of bounds mid whitespace
+
+<SCRIPT>
+console.log('A programmer started to cuss')
+console.log('Because getting to sleep was a fuss')
+console.log('As he lay there in bed')
+console.log('Looping 'round in his head')
+console.log('while(!asleep()) sheep++;')
+</SCRIPT>
+
+Out of bounds mid whitespace x1
+Out of bounds mid whitespace x2
+Out of bounds mid whitespace x3
+
+<script id="three" foo="123" bar baz="Test String">
+// More complex block with a given ID, some attributes and an export
+
+export default function doStuff() {
+	console.log('STUFF!');
+}
+</script>
+
+Out of bounds trailing whitespace

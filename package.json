@@ -1,0 +1,54 @@
+{
+  "name": "@doop/esm-loader",
+  "version": "0.0.0",
+  "description": "Doop single-file component loader for Node",
+  "type": "module",
+  "main": "./lib/index.js",
+  "imports": {
+    "#lib/*": "./lib/*.js"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*.js"
+  },
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "keywords": [
+    "Doop",
+    "loader",
+    "esm"
+  ],
+  "author": "Matt Carter <m@ttcarter.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MomsFriendlyDevCo/doop-esm-loader"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "create-esm-loader": "^0.2.3"
+  },
+  "devDependencies": {
+    "@momsfriendlydevco/es6": "^1.2.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.37.0",
+    "mocha": "^10.2.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 13,
+      "sourceType": "module"
+    }
+  }
+}
