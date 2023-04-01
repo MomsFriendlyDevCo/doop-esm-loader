@@ -13,7 +13,7 @@ describe('@doop/esm-loader - basic block test', ()=> {
 	it('prepare a class instance', ()=>
 		new DoopParser(testPath)
 			.on('orphanedLines', data => emitted.orphanedLines.push(data))
-			.parse()
+			.parse({orphans: true})
 			.then(result => parser = result)
 	);
 
