@@ -1,0 +1,11 @@
+<script on="startup">
+console.log('Startup!');
+</script>
+
+<script on="body">
+console.log('Body!');
+</script>
+
+<script on="finish">
+console.log('Finish!');
+</script>
