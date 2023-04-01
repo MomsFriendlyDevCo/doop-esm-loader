@@ -19,7 +19,8 @@ describe('@doop/esm-loader - minimal block test', ()=> {
 						attrs: {},
 						lineStart: 2,
 						lineEnd: 2,
-						source: "console.log('Hello World');",
+						source: ["console.log('Hello World');"],
+						sourceHeaders: [],
 					},
 				});
 			})

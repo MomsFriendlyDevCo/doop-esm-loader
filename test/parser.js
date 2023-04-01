@@ -32,7 +32,7 @@ describe('@doop/esm-loader - basic block test', ()=> {
 		});
 
 		expect(parser.blocks.three).to.have.property('source');
-		expect(parser.blocks.three.source).to.be.a('string');
+		expect(parser.blocks.three.source).to.be.an('array');
 	});
 
 
