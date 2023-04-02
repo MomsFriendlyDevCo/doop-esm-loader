@@ -29,6 +29,7 @@ describe('@doop/esm-loader - basic block test', ()=> {
 			foo: 123,
 			bar: true,
 			baz: 'Test String',
+			on: 'endpoint',
 		});
 
 		expect(parser.blocks.three).to.have.property('source');
