@@ -1,0 +1,49 @@
+<script middleware>
+import auth from '@acme/auth';
+
+/**
+* Load auth middleare
+*/
+export default async function() {
+	await auth.init();
+
+	app.use(auth.middleware);
+}
+</script>
+
+<script middleware>
+import middlewareHelper from '@acme/middleware-helper';
+
+/**
+* Inject simple middleware
+*/
+app.use(middlewareHelper);
+</script>
+
+
+<script endpoint>
+import widgets from '#lib/widgets';
+
+/**
+* List all widgets
+* @returns {Array<Object>} Collection of widgets
+*/
+app.get('/api/widgets', async (req, res) =>
+	res.send(await widgets.getAll())
+);
+</script>
+
+
+<script endpoint>
+import widgets from '#lib/widgets';
+
+/**
+* Create a new widget
+* @param {Object} req.data Input data to append
+* @returns {Array<Object>} Collection of widgets
+*/
+app.post('/api/widgets', async (req, res) => {
+	await widgets.add(req.body);
+	res.send(widgets.getAll());
+});
+</script>
