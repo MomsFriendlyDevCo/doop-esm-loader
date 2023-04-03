@@ -18,11 +18,16 @@ Out of bounds mid whitespace x1
 Out of bounds mid whitespace x2
 Out of bounds mid whitespace x3
 
-<script id="three" foo="123" bar baz="Test String">
+<script id="three" foo="123" bar baz="Test String" endpoint>
 // More complex block with a given ID, some attributes and an export
+import _ from lodash;
 
 export default function doStuff() {
-	console.log('STUFF!');
+	myFunction();
+}
+
+function myFunction() {
+	console.log('STUFF!', _.random(1000, 9999));
 }
 </script>
 

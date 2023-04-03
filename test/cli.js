@@ -4,7 +4,7 @@ import {execa} from 'execa';
 
 describe('@doop/esm-loader - CLI test', ()=> {
 
-	it('execute a simple Node program', ()=> {
+	it('execute a simple Node program with the Doop loader', ()=> {
 		let rootPath = dirName('..');
 		let loaderPath = `${rootPath}/lib/index.js`;
 		let testPath = `${rootPath}/test/data/cli.doop`;
