@@ -1,7 +1,7 @@
 {
   "name": "@doop/esm-loader",
   "version": "0.0.0",
-  "description": "Doop single-file component loader for Node",
+  "description": "Doop single-file component (SFC) loader for Node",
   "type": "module",
   "main": "./lib/index.js",
   "imports": {
