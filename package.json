@@ -31,7 +31,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "create-esm-loader": "^0.2.3"
+    "@momsfriendlydevco/eventer": "^1.6.1",
+    "create-esm-loader": "^0.2.3",
+    "debug": "^4.3.4"
   },
   "devDependencies": {
     "@momsfriendlydevco/es6": "^1.2.0",
