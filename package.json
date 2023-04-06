@@ -37,21 +37,21 @@
   },
   "devDependencies": {
     "@momsfriendlydevco/es6": "^1.2.0",
+    "@momsfriendlydevco/eslint-config": "1.x",
     "chai": "^4.3.7",
     "eslint": "^8.37.0",
     "execa": "^7.1.1",
     "mocha": "^10.2.0"
   },
+  "peerDependencies": {
+    "@momsfriendlydevco/eslint-config": "1.x"
+  },
   "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": {
-      "es6": true,
-      "node": true,
-      "mocha": true
-    },
+    "extends": [
+      "@momsfriendlydevco"
+    ],
     "parserOptions": {
-      "ecmaVersion": 13,
-      "sourceType": "module"
+      "ecmaVersion": "latest"
     }
   }
 }
