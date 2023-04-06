@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@momsfriendlydevco/es6": "^1.2.0",
-    "@momsfriendlydevco/eslint-config": "1.x",
+    "@momsfriendlydevco/eslint-config": "^1.0.0",
     "chai": "^4.3.7",
     "eslint": "^8.37.0",
     "execa": "^7.1.1",
