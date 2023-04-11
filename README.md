@@ -19,6 +19,9 @@ This config includes setup for Mocha and ESLint.
 
 ```json
 {
+  "scripts": {
+    "lint": "eslint --ext .doop --ext .js --ext .vue ."
+  },
   "eslintConfig": {
     "extends": [
       "@momsfriendlydevco"
